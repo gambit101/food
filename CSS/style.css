@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variabels */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+/* Navigation bar: logo and img */
+#logo{
+    margin: 5px 10px;
+}
+
+#logo img{
+    height: 45px;
+    width: 45px;
+}
+/* Navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+    padding-right: 141%;
+}
+
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.05rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 15px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    display: block;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+
+#home::before{
+    content: "";
+    background: url('../img/spaghetti-1932466_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 76%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+/* Services section */
+    #services{
+        margin: 14px;
+        display: flex;
+    }
+    .services-container{
+        margin: 0px;
+    }
+    #services .box{
+        border: 2px solid brown;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 23px;
+        background-color: rgb(255, 227, 191);
+    }
+    #services .box p{
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 13px;
+    }
+    #services .box img{
+        height: 180px;
+        justify-content: center;
+        margin: auto;
+        display: block;
+    }
+
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    background: url('../img/double-exposure-image-business-profit-growth_31965-3022.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+    height: 60%;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 100px;
+}
+.client-item{
+    padding: 20px 30px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+    /* margin: 70px; */
+    margin-top: 55px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../img/ERP-Business-Intelligence-Wallpaper.png') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .25rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+footer{
+    background-color: black;
+    color: red;
+    padding: 5px 10px;
+}
+/* Utility Class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+.center{
+    text-align: center;
+}
+
+
+
+    
